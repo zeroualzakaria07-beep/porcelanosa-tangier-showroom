@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Porcelanosa Tangier</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .product-details {
+            padding: 40px 0;
+        }
+
+        .category-section {
+            margin-bottom: 60px;
+            padding: 40px;
+            background-color: var(--light-color);
+            border-radius: 10px;
+        }
+
+        .category-title {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 15px;
+        }
+
+        .products-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .product-item {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .product-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #e0e0e0;
+        }
+
+        .product-details-info {
+            padding: 20px;
+        }
+
+        .product-name {
+            font-size: 1.2rem;
+            color: var(--dark-color);
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-description {
+            color: var(--gray-color);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .product-features {
+            list-style: none;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .product-features li {
+            padding: 5px 0;
+        }
+
+        .product-features li:before {
+            content: "✓ ";
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .category-description {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://via.placeholder.com/150x50?text=PORCELANOSA" alt="Porcelanosa Logo">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#tiles">Tiles</a></li>
+                <li><a href="#bathroom">Bathroom</a></li>
+                <li><a href="#kitchen">Kitchen</a></li>
+                <li><a href="#surfaces">Surfaces</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="hero" style="padding: 40px 0; text-align: center;">
+        <div class="hero-content" style="flex: 1; padding-right: 0;">
+            <h1 style="font-size: 2.5rem;">Our Premium Product Collections</h1>
+            <p>Discover our extensive range of high-quality tiles, bathroom fixtures, and kitchen surfaces</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="product-details">
+        <div class="container">
+
+            <!-- TILES SECTION -->
+            <div id="tiles" class="category-section">
+                <h2 class="category-title"><i class="fas fa-square"></i> Premium Tiles Collection</h2>
+                <div class="category-description">
+                    <p>Our ceramic and porcelain tiles combine elegance with durability. Perfect for bathrooms, kitchens, living areas, and outdoor spaces. Each tile is crafted with precision to deliver exceptional quality and aesthetic appeal.</p>
+                </div>
+                <div class="products-showcase">
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/250x200?text=Ceramic+Floor" alt="Ceramic Floor Tiles" class="product-image">
+                        <div class="product-details-info">
+                            <div class="product-name">Ceramic Floor Tiles</div>
+                            <div class="product-description">Durable ceramic floor tiles for high-traffic areas</div>
+                            <ul class="product-features">
+                                <li>Water resistant</li>
+                                <li>Easy to clean</li>
+                                <li>Available in various sizes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/250x200?text=Porcelain+Tiles" alt="Porcelain Tiles" class="product-image">
+                        <div class="product-details-info">
+                            <div class="product-name">Porcelain Tiles</div>
+                            <div class="product-description">Premium porcelain with natural stone appearance</div>
+                            <ul class="product-features">
+                                <li>Stain resistant</li>
+                                <li>Slip resistant</li>
+                                <li>Long-lasting finish</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/250x200?text=Wall+Tiles" alt="Wall Tiles" class="product-image">
+                        <div class="product-details-info">
+                            <div class="product-name">Decorative Wall Tiles</div>
+                            <div class="product-description">Elegant wall tiles for bathrooms and kitchens</div>
+                            <ul class="product-features">
+                                <li>Glossy & matte finishes</li>
+                                <li>Unique patterns</li>
+                                <li>Various colors</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/250x200?text=Outdoor+Tiles" alt="Outdoor Tiles" class="product-image">
+                        <div class="product-details-info">
+                            <div class="product-name">Outdoor Tiles</div>
+                            <div class="product-description">Weather-resistant tiles for terraces and patios</div>
+                            <ul class="product-features">
+                                <li>UV resistant</li>
+                                <li>Non-slip surface</li>
+                                <li>Frost-proof</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BATHROOM SECTION -->
+            <div id="bathroom" class="category-section">
+                <h2 class="category-title"><i class="fas fa-bath"></i> Bathroom Fixtures & Accessories</h2>
+                <div class="category-description">
+                    <p>Transform your bathroom with our luxurious fixtures and accessories. From faucets and sinks to shower systems and storage solutions, we offer everything you need to create a spa-like oasis in your home.</p>
+                </div>
+                <div class="products-showcase">
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/250x200?text=Faucets" alt="Premium Faucets" class="product-image">
+                        <div class="product-details-info">
+                            <div class="product-name">Premium Faucets</div>
+                            <div class="product-description">Designer faucets with modern technology</div>
+                            <ul class="product-features">
+                                <li>Water-saving features</li>
+                                <li>Chrome & stainless steel</li>
+                                <li>Easy installation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/250x200?text=Sinks" alt="Luxury Sinks" class="product-image">
+                        <div class="product-details-info">
+                            <div class="product-name">Luxury Sinks</div>
+                            <div class="product-description">High-end sinks in various styles and materials</div>
+                            <ul class="product-features">
+                                <li>Ceramic & composite</li>
+                                <li>Custom dimensions</li>
+                                <li>Durable finishes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/250x200?text=Shower+Systems" alt="Shower Systems" class="product-image">
+                        <div class="product-details-info">
+                            <div class="product-name">Shower Systems</div>
+                            <div class="product-description">Advanced shower and rain shower systems</div>
+                            <ul class="product-features">
+                                <li>Rainfall showerheads</li>
+                                <li>Temperature control</li>
+                                <li>Spa experience</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/250x200?text=Storage" alt="Storage Solutions" class="product-image">
+                        <div class="product-details-info">
+                            <div class="product-name">Storage Solutions</div>
+                            <div class="product-description">Elegant cabinets and storage units</div>
+                            <ul class="product-features">
+                                <li>Space-efficient designs</li>
+                                <li>Premium materials</li>
+                                <li>Mirrors & lighting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KITCHEN SECTION -->
+            <div id="kitchen" class="category-section">
+                <h2 class="category-title"><i class="fas fa-utensils"></i> Kitchen Surfaces & Materials</h2>
+                <div class="category-description">
+                    <p>Create your dream kitchen with our premium countertops and kitchen surfaces. Our selection includes various materials, colors, and finishes to match any kitchen design and lifestyle needs.</p>
+                </div>
+                <div class="products-showcase">
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/250x200?text=Countertops" alt="Premium Countertops" class="product-image">
+                        <div class="product-details-info">
+                            <div class="product-name">Premium Countertops</div>
+                            <div class="product-description">Durable and stylish countertop materials</div>
+                            <ul class="product-features">
+                                <li>Heat resistant</li>
+                                <li>Stain proof</li>
+                                <li>Easy maintenance</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/250x200?text=Backsplash" alt="Kitchen Backsplash" class="product-image">
+                        <div class="product-details-info">
+                            <div class="product-name">Kitchen Backsplash</div>
+                            <div class="product-description">Decorative backsplash tiles for every style</div>
+                            <ul class="product-features">
+                                <li>Trendy patterns</li>
+                                <li>Splash-proof</li>
+                                <li>Various materials</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/250x200?text=Kitchen+Faucets" alt="Kitchen Faucets" class="product-image">
+                        <div class="product-details-info">
+                            <div class="product-name">Kitchen Faucets</div>
+                            <div class="product-description">Professional-grade kitchen faucets</div>
+                            <ul class="product-features">
+                                <li>Pull-down sprayers</li>
+                                <li>Double handles</li>
+                                <li>Swivel spouts</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/250x200?text=Floor+Tiles" alt="Kitchen Floor Tiles" class="product-image">
+                        <div class="product-details-info">
+                            <div class="product-name">Kitchen Floor Tiles</div>
+                            <div class="product-description">Slip-resistant floor tiles for kitchens</div>
+                            <ul class="product-features">
+                                <li>Non-slip surface</li>
+                                <li>Easy to clean</li>
+                                <li>Durable material</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DECORATIVE SURFACES SECTION -->
+            <div id="surfaces" class="category-section">
+                <h2 class="category-title"><i class="fas fa-cube"></i> Decorative Surfaces</h2>
+                <div class="category-description">
+                    <p>Explore our collection of decorative surfaces designed to add personality and style to any room. From textured wall panels to elegant floor coverings, we have solutions for every design vision.</p>
+                </div>
+                <div class="products-showcase">
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/250x200?text=Wall+Panels" alt="Textured Wall Panels" class="product-image">
+                        <div class="product-details-info">
+                            <div class="product-name">Textured Wall Panels</div>
+                            <div class="product-description">3D wall panels for modern interiors</div>
+                            <ul class="product-features">
+                                <li>Various textures</li>
+                                <li>Lightweight design</li>
+                                <li>Easy installation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/250x200?text=Stone+Effect" alt="Stone Effect Surfaces" class="product-image">
+                        <div class="product-details-info">
+                            <div class="product-name">Stone Effect Surfaces</div>
+                            <div class="product-description">Natural stone-look finishes</div>
+                            <ul class="product-features">
+                                <li>Marble patterns</li>
+                                <li>Granite finishes</li>
+                                <li>Slate textures</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/250x200?text=Wood+Effect" alt="Wood Effect Tiles" class="product-image">
+                        <div class="product-details-info">
+                            <div class="product-name">Wood Effect Tiles</div>
+                            <div class="product-description">Realistic wood-look ceramic tiles</div>
+                            <ul class="product-features">
+                                <li>Warm tones</li>
+                                <li>Durable ceramic</li>
+                                <li>Waterproof</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/250x200?text=Metal+Finish" alt="Metal Finish Surfaces" class="product-image">
+                        <div class="product-details-info">
+                            <div class="product-name">Metal Finish Surfaces</div>
+                            <div class="product-description">Contemporary metal-effect tiles</div>
+                            <ul class="product-features">
+                                <li>Brushed finishes</li>
+                                <li>Modern aesthetic</li>
+                                <li>Premium quality</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="background-color: var(--dark-color); color: white; padding: 40px 0; text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 2rem; margin-bottom: 20px;">Ready to Transform Your Space?</h2>
+            <p style="margin-bottom: 30px; font-size: 1.1rem;">Visit our showroom to see our products in person</p>
+            <a href="index.html#contact" class="cta-button" style="display: inline-block;">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Porcelanosa Tangier. All rights reserved.</p>
+            <p>Premium Tiles | Bathroom Fixtures | Kitchen Surfaces</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
